@@ -137,3 +137,19 @@ Landing Page
 
 Admin Page
 
+
+
+### Test Admin checker
+1. **Registration**
+{
+  "username": "Admin",
+  "password": "securepassword",
+  "registrationKey": "AdminofSafemax"       //this ia given in .env file can be changes accordingly
+}
+2. **Login**
+{
+  "username": "Admin",
+  "password": "securepassword"
+}
+
+
