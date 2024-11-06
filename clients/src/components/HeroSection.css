@@ -1,0 +1,63 @@
+/* HeroSection.css */
+
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 60px 450px;
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.hero-section::before {
+  content: "SafeMax";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(75, 0, 130, 0.3);
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 500px;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 20px;
+  }
+
+  .cta-button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* Media query for extra-small screens */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 30px 10px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
