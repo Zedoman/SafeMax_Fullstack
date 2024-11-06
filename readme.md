@@ -95,21 +95,22 @@ PORT	Port for the server (default: 5000)
 ### Folder Structure
 
 safemax-security/
-├── client/               # React frontend
-│   ├── public/           # Static files
-│   ├── src/
-│   │   ├── components/   # Landing page components
-│   │   ├── pages/        # Admin pages
-│   │   ├── App.js        # Main app component
-│   │   └── App.css       # Global styles
-├── server/               # Express backend
-│   ├── config/           # Database and JWT configuration
-│   ├── controllers/      # Route controllers
-│   ├── models/           # Mongoose schemas
-│   ├── routes/           # API routes
-│   ├── middleware/       # Auth and other middleware
-│   └── server.js         # Server entry point
-└── README.md
+├── client/               # React frontend  
+│   ├── public/           # Static files  
+│   ├── src/  
+│   │   ├── components/   # Landing page components  
+│   │   ├── pages/        # Admin pages  
+│   │   ├── App.js        # Main app component  
+│   │   └── App.css       # Global styles  
+├── server/               # Express backend  
+│   ├── config/           # Database and JWT configuration  
+│   ├── controllers/      # Route controllers  
+│   ├── models/           # Mongoose schemas  
+│   ├── routes/           # API routes  
+│   ├── middleware/       # Auth and other middleware  
+│   └── server.js         # Server entry point  
+└── README.md  
+
 
 
 ### Available Scripts
