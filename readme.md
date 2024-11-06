@@ -56,7 +56,7 @@ This project is a responsive landing page for SafeMax Security with an integrate
 
 3. **Install dependencies for the frontend**
    ```bash
-   cd client
+   cd clients
    npm install
 
 ### Environment Variables
@@ -80,7 +80,7 @@ Create a .env file in the server directory with the following variables:
 2. **Run the frontend server**
 
    ```bash
-   cd client
+   cd clients
    npm start
 
 
@@ -98,7 +98,7 @@ PORT	Port for the server (default: 5000) <br>
 ### Folder Structure
 
 safemax-security/
-├── client/               # React frontend  
+├── clients/               # React frontend  
 │   ├── public/           # Static files  
 │   ├── src/  
 │   │   ├── components/   # Landing page components  

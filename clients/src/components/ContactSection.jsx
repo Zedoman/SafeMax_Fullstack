@@ -5,6 +5,7 @@ import './ContactSection.css';
 const ContactSection = () => {
   const [formData, setFormData] = useState({ name: '', email: '', dateTime: '', comments: '' });
   const [message, setMessage] = useState('');
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -13,7 +14,7 @@ const ContactSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/appointments', formData);
+      await axios.post(`${API_URL}/api/appointments`, formData);
       setMessage('Appointment request submitted successfully!');
       setFormData({ name: '', email: '', dateTime: '', comments: '' }); // Clear the form fields
     } catch (error) {

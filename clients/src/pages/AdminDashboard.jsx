@@ -4,11 +4,12 @@ import './AdminDashboard.css';
 
 const AdminDashboard = ({ onLogout }) => {
   const [appointments, setAppointments] = useState([]);
+  const API_URL = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     const fetchAppointments = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/admin/appointments', {
+        const { data } = await axios.get(`${API_URL}/api/admin/appointments`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('adminToken')}` }
         });
         setAppointments(data);
@@ -21,7 +22,7 @@ const AdminDashboard = ({ onLogout }) => {
 
   const updateStatus = async (id, status) => {
     try {
-      await axios.put(`http://localhost:5000/api/admin/appointments/${id}`, { status }, {
+      await axios.put(`${API_URL}/api/admin/appointments/${id}`, { status }, {
         headers: { Authorization: `Bearer ${localStorage.getItem('adminToken')}` }
       });
       setAppointments((prev) =>

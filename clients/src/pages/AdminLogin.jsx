@@ -8,11 +8,12 @@ const AdminLogin = () => {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const { login } = useContext(AuthContext);
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:5000/api/admin/login', { username, password });
+      const { data } = await axios.post(`${API_URL}/api/admin/login`, { username, password });
       login(data.token);
       window.location.href = '/admin/dashboard';
     } catch (error) {
