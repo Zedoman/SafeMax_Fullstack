@@ -50,35 +50,38 @@ This project is a responsive landing page for SafeMax Security with an integrate
    cd safemax-security
 
 2. **Install dependencies for the backend**
-
-cd server
-npm install
+   ```bash
+   cd server
+   npm install
 
 3. **Install dependencies for the frontend**
-
-cd client
-npm install
+   ```bash
+   cd client
+   npm install
 
 ### Environment Variables
 Create a .env file in the server directory with the following variables:
 
-PORT=5000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-ADMIN_REGISTRATION_KEY=key [any key just to check if the key is same or not while registering]
+1. ```bash
+   PORT=5000
+   MONGO_URI=your_mongodb_uri
+   JWT_SECRET=your_jwt_secret
+   ADMIN_REGISTRATION_KEY=key [any key just to check if the key is same or not while registering]
 
 
 ### Running the Application
 
 1. **Run the backend server**
 
-cd server
-nodemon app.js
+   ```bash
+   cd server
+   nodemon app.js
 
 2. **Run the frontend server**
 
-cd client
-npm start
+   ```bash
+   cd client
+   npm start
 
 
 ### Access the application
@@ -87,7 +90,7 @@ Landing Page: http://localhost:3000
 Admin Dashboard: http://localhost:3000/admin
 
 
-Key	Description
+### Key	Description
 MONGO_URI	MongoDB connection string
 JWT_SECRET	Secret key for JWT authentication
 PORT	Port for the server (default: 5000)
@@ -123,13 +126,13 @@ npm start: Runs the React app in development mode on http://localhost:3000.
 
 ### API Endpoints
 1. **Authentication**
-POST /api/admin/register - Register a new admin (for initial setup)
-POST /api/admin/login - Login as admin
+POST /api/admin/register - Register a new admin (for initial setup) <br>
+POST /api/admin/login - Login as admin <br>
 
 2. **Appointments**
-POST /api/appointments - Schedule a new appointment
-GET /api/admin/appointments - Get all appointments (Admin only)
-PUT /api/admin/appointments/ - Update the status of an appointment (Admin only)
+POST /api/appointments - Schedule a new appointment <br>
+GET /api/admin/appointments - Get all appointments (Admin only) <br>
+PUT /api/admin/appointments/ - Update the status of an appointment (Admin only) <br>
 
 
 ### Screenshots
@@ -140,16 +143,16 @@ Admin Page
 
 
 ### Test Admin checker
-1. **Registration**
-{
-  "username": "Admin",
-  "password": "securepassword",
-  "registrationKey": "AdminofSafemax"       //this ia given in .env file can be changes accordingly
-}
-2. **Login**
-{
-  "username": "Admin",
-  "password": "securepassword"
-}
+1. **Registration** <br>
+{ <br>
+  "username": "Admin", <br>
+  "password": "securepassword", <br>
+  "registrationKey": "AdminofSafemax"       //this ia given in .env file can be changes accordingly <br>
+} <br>
+2. **Login** <br>
+{ <br>
+  "username": "Admin", <br>
+  "password": "securepassword" <br>
+}<br>
 
 
