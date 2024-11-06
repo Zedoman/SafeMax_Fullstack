@@ -47,7 +47,7 @@ This project is a responsive landing page for SafeMax Security with an integrate
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Zedoman/SafeMax_Fullstack
-   cd safemax-security
+   cd SafeMax_Fullstack
 
 2. **Install dependencies for the backend**
    ```bash
@@ -86,14 +86,14 @@ Create a .env file in the server directory with the following variables:
 
 ### Access the application
 
-Landing Page: http://localhost:3000
-Admin Dashboard: http://localhost:3000/admin
+Landing Page: http://localhost:3000 <br>
+Admin Dashboard: http://localhost:3000/admin <br>
 
 
 ### Key	Description
-MONGO_URI	MongoDB connection string
-JWT_SECRET	Secret key for JWT authentication
-PORT	Port for the server (default: 5000)
+MONGO_URI	MongoDB connection string <br>
+JWT_SECRET	Secret key for JWT authentication <br>
+PORT	Port for the server (default: 5000) <br>
 
 ### Folder Structure
 
@@ -117,19 +117,19 @@ safemax-security/
 
 
 ### Available Scripts
-1. **Backend**
-nodemon app.js: Runs the server in production mode.
-npm run dev: Runs the server in development mode with nodemon.
+1. **Backend** <br>
+nodemon app.js: Runs the server in production mode. <br>
+npm run dev: Runs the server in development mode with nodemon. <br>
 
-2. **Frontend**
-npm start: Runs the React app in development mode on http://localhost:3000.
+2. **Frontend** <br>
+npm start: Runs the React app in development mode on http://localhost:3000. <br>
 
 ### API Endpoints
-1. **Authentication**
+1. **Authentication** <br>
 POST /api/admin/register - Register a new admin (for initial setup) <br>
 POST /api/admin/login - Login as admin <br>
 
-2. **Appointments**
+2. **Appointments** <br>
 POST /api/appointments - Schedule a new appointment <br>
 GET /api/admin/appointments - Get all appointments (Admin only) <br>
 PUT /api/admin/appointments/ - Update the status of an appointment (Admin only) <br>
