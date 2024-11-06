@@ -46,7 +46,7 @@ This project is a responsive landing page for SafeMax Security with an integrate
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/safemax-security
+   git clone https://github.com/Zedoman/SafeMax_Fullstack
    cd safemax-security
 
 2. **Install dependencies for the backend**
@@ -59,7 +59,7 @@ npm install
 cd client
 npm install
 
-Environment Variables
+### Environment Variables
 Create a .env file in the server directory with the following variables:
 
 PORT=5000
@@ -108,7 +108,7 @@ safemax-security/
 │   ├── models/           # Mongoose schemas  
 │   ├── routes/           # API routes  
 │   ├── middleware/       # Auth and other middleware  
-│   └── server.js         # Server entry point  
+│   └── app.js         # Server entry point  
 └── README.md  
 
 
