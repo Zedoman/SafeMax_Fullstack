@@ -137,6 +137,9 @@ PUT /api/admin/appointments/ - Update the status of an appointment (Admin only) 
 
 ### Screenshots
 Landing Page
+<img width="1680" alt="Screenshot 2024-11-07 at 00 20 05" src="https://github.com/user-attachments/assets/811a1757-a24d-4446-828b-68d3ae8ed82a">
+<img width="1680" alt="Screenshot 2024-11-07 at 00 19 51" src="https://github.com/user-attachments/assets/5ca583b1-2e5e-49bc-b0fd-141e76a83ea5">
+
 
 Admin Page
 
